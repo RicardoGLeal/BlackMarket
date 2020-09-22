@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circle_color_3"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:gravity="right"
+        android:background="@drawable/ic_darkbluebox"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_person_black_24dp"/>
+
+        <EditText
+            android:id="@+id/userDialog_nameID"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Nombre"
+            android:inputType="textShortMessage|textCapSentences"
+            android:textSize="25sp"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:background="@drawable/ic_darkbluebox"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_person_black_24dp"/>
+
+        <EditText
+            android:id="@+id/userDialog_lastnameID"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Apellidos"
+            android:inputType="textShortMessage|textCapSentences"
+            android:textSize="25sp"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:background="@drawable/ic_darkbluebox"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_local_phone_blue_24dp"/>
+
+        <EditText
+            android:id="@+id/userDialog_phoneID"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Telefono"
+            android:inputType="phone"
+            android:textSize="25sp"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:background="@drawable/ic_darkbluebox"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_email_blue_24dp"/>
+
+        <EditText
+            android:id="@+id/userDialog_emailID"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Correo"
+            android:inputType="textShortMessage"
+            android:textSize="25sp"></EditText>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:background="@drawable/ic_darkbluebox"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_lock_blue_24dp"/>
+
+        <EditText
+            android:id="@+id/userDialog_passwordID"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textSize="25sp"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"></LinearLayout>
+    <Button
+        android:id="@+id/userDialog_saveID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:textSize="20sp"
+        android:textColor="@color/defaultTextColor"
+        android:background="@drawable/rounded_button" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"></LinearLayout>
+</LinearLayout>

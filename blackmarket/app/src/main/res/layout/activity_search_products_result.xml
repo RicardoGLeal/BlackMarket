@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchProductsResultActivity"
+    android:orientation="vertical"
+    android:background="@color/layoutBackgrounColor">
+
+    <!-- TODO: poner filtros -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_search_product_result"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimary">
+        <ImageButton
+            android:id="@+id/back_search_product_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="Atras"
+
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_white_24dp"/>
+
+        <!--<android.support.v7.widget.SearchView
+            android:id="@+id/search_bar_pr"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_rounded_white_bg"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"/>-->
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Lista_product_result"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

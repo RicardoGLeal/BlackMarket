@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CarritoFragment"
+    android:background="@color/layoutBackgrounColor"
+    android:orientation="vertical">
+<!-- TODO: activity despues de darle al boton de comprar -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_carrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_primary_colors">
+
+           <RelativeLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+              <LinearLayout
+                  android:id="@+id/carrito_direccion_opc"
+                  android:layout_centerHorizontal="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:id="@+id/carrito_direccion_seleccionada"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Direccion"
+                      android:textStyle="normal"
+                      android:textSize="15sp"
+                      android:textColor="@color/textColor"
+                      />
+                  <ImageButton
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@android:color/transparent"
+                      android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+              </LinearLayout>
+           </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Lista_carrito"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="3dp"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mensaje_carrito_vacio"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+
+            android:visibility="gone"
+
+            android:text="No hay nada en el carrito..."
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/carrito_total_container"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="10dp"
+
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_alignStart="@+id/carrito_total_container"
+                android:layout_alignTop="@+id/carrito_total_container"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text="Total:"
+                    android:textColor="@color/textColor"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/carrito_total"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="16dp"
+
+                    android:gravity="center"
+
+                    android:text="$ 100,000"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/boton_comprar_carrito"
+
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:background="@drawable/rounded_buy_button"
+                    android:text="Comprar !"
+                    android:textColor="@color/cardviewColor"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

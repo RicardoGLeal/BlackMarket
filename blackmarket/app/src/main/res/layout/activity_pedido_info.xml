@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PedidoInfoActivity"
+    android:orientation="vertical"
+    android:background="@color/layoutBackgrounColor">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_pedido_info"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimary">
+        <ImageButton
+            android:id="@+id/back_pedido_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="Atras"
+
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_white_24dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+
+                app:cardCornerRadius="4dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="Pedido:"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="18sp"/>
+
+
+
+                    <ProgressBar
+                        android:id="@+id/pedido_info_estado"
+                        style="?android:attr/progressBarStyleHorizontal"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:progress="1"
+
+                        android:clickable="false"
+                        android:max="3"
+                        android:scrollIndicators="none"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="30dp"
+                            android:text="Enviado"
+                            android:textColor="@color/colorAzul_1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="60dp"
+                            android:text="Transportando"
+                            android:textColor="@color/colorAzul_1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="40dp"
+                            android:text="Entregado"
+                            android:textColor="@color/colorAzul_1"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+
+                app:cardCornerRadius="4dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pedido_info_fecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:text="13 de febrero del 2090"
+                        android:textStyle="normal"
+                        android:textColor="@color/textColor"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:text="Nombre:"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/pedido_info_nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+
+                        android:text="Angel Padilla Esqueda"
+                        android:textStyle="normal"
+                        android:textColor="@color/textColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:text="Direccion:"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/pedido_info_direccion"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+
+                        android:text="Castillo 244"
+                        android:textStyle="normal"
+                        android:textColor="@color/textColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:text="Codigo postal:"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/pedido_info_cp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+
+
+                        android:text="#45136"
+                        android:textStyle="normal"
+                        android:textColor="@color/textColor"
+                        android:textSize="15dp"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+
+
+                app:cardCornerRadius="4dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:text="Resumen:"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="18sp"/>
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/Lista_pedido_info"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="10dp"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+
+                app:cardCornerRadius="4dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:text="Total:"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/pedido_info_total"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:gravity="center"
+
+
+                        android:text="$ 100,000.00"
+                        android:textStyle="normal"
+                        android:textColor="@color/textColor"
+                        android:textSize="15dp"/>
+
+                    <Button
+                        android:id="@+id/pedido_info_cancelar_boton"
+
+                        android:layout_width="150dp"
+                        android:layout_height="55dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+
+                        android:background="@drawable/rounded_button"
+                        android:text="Cancelar "
+                        android:textColor="@color/cardviewColor"
+                        android:textSize="16sp"
+
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

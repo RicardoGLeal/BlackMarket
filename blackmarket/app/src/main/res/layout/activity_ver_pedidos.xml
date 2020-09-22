@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerPedidosActivity"
+    android:background="@color/layoutBackgrounColor"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_ver_pedidos"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimary">
+        <ImageButton
+            android:id="@+id/back_ver_pedidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="Atras"
+
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_white_24dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Lista_pedidos"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+</LinearLayout>

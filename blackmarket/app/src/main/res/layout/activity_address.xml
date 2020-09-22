@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D4D4"
+    android:orientation="vertical"
+    android:paddingTop="60dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".AddressActivity">
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_home_black_24dp"/>
+        <EditText
+            android:id="@+id/IDName"
+            android:hint="Dirección"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:drawablePadding="30dp"
+            android:textSize="25sp"
+            android:inputType="textPersonName|textCapWords" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/IDAPpaterno"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Codigo Postal"
+            android:inputType="textPersonName|textCapWords"
+            android:textSize="25sp"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/IDAPmaterno"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Ciudad"
+            android:inputType="textPersonName|textCapWords"
+            android:textSize="25sp"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_phone_black_24dp"/>
+        <EditText
+            android:id="@+id/IDTel"
+            android:hint="Pais"
+            android:textSize="25sp"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:inputType="phone"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_email_black_24dp"/>
+        <EditText
+            android:id="@+id/IDEmail"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Email"
+            android:inputType="textWebEmailAddress"
+            android:textSize="25sp"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_lock_outline_black_24dp"/>
+        <EditText
+            android:id="@+id/IDPassword"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="25sp"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <RadioGroup
+        android:id="@+id/Sexo"
+        android:layout_width="193dp"
+        android:layout_height="114dp"/>
+
+    <Button
+        android:id="@+id/IDGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:textSize="20sp"
+        android:background="@color/colorAzul_1"
+        android:onClick="Guardar"
+        />
+
+</LinearLayout>

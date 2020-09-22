@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+
+        android:text="Direccion:"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/dialog_direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+
+        android:textAlignment="center"
+
+        android:textColor="@color/textColor"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+
+        android:text="Codigo Postal:"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/dialog_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+
+        android:textAlignment="center"
+
+        android:textColor="@color/textColor"
+        android:textSize="15sp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+
+        android:text="Ciudad:"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/dialog_ciudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+
+        android:textAlignment="center"
+
+        android:textColor="@color/textColor"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+
+        android:text="Estado:"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/dialog_estado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="50dp"
+
+        android:textAlignment="center"
+
+        android:textColor="@color/textColor"
+        android:textSize="15sp"/>
+
+</LinearLayout>

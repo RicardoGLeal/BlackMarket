@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circle_color_2"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:gravity="right"
+        android:background="@drawable/ic_darkorangebox"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_edit_black_40dp"/>
+
+        <EditText
+            android:id="@+id/itemDialog_nameID"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Nombre"
+            android:inputType="textShortMessage|textCapSentences"
+            android:textSize="25sp"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:background="@drawable/ic_darkorangebox"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_attach_money_black_24dp"/>
+
+        <EditText
+            android:id="@+id/itemDialog_priceID"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Precio"
+            android:inputType="numberDecimal"
+            android:textSize="25sp"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:background="@drawable/ic_darkorangebox"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_book_black_24dp"/>
+
+        <EditText
+            android:id="@+id/itemDialog_cateID"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Categoria"
+            android:inputType="numberDecimal"
+            android:textSize="25sp"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:background="@drawable/ic_darkorangebox"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_image_acent_24dp"/>
+
+        <EditText
+            android:id="@+id/itemDialog_imageID"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Imagen"
+            android:inputType="textShortMessage|textCapSentences"
+            android:textSize="25sp"></EditText>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:background="@drawable/ic_darkorangebox"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_edit_black_40dp"/>
+
+        <EditText
+            android:id="@+id/itemDialog_descID"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bgtextbox"
+            android:hint="Descripcion"
+            android:inputType="textShortMessage|textCapSentences"
+            android:textSize="25sp"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"></LinearLayout>
+    <Button
+        android:id="@+id/itemDialog_saveID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:textSize="20sp"
+        android:textColor="@color/defaultTextColor"
+        android:background="@drawable/rounded_button" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"></LinearLayout>
+</LinearLayout>

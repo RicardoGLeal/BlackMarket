@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFA524</color>
+    <color name="colorPrimaryDark">#CC8721</color>
+    <color name="colorPrimaryLight">#FAB04D</color>
+    <color name="colorAccent">#24AAFF</color>
+
+    <color name="layoutBackgrounColor">#c2c2c2</color>
+    <color name="bottomNavColor">#d9dad7</color>
+    <color name="cardviewColor">#fcfaf9</color>
+
+    <color name="colorRojo">#FF001F</color>
+    <color name="colorRosa">#D81B60</color>
+    <color name="colorNaranja">#E46402</color>
+    <color name="colorAmarillo">#DBAC04</color>
+    <color name="colorAzul_1">#0D9BFF</color>
+    <color name="colorAzul_2">#3ADFE8</color>
+    <color name="colorGris">#696969</color>
+
+    <color name="colorPrimary_1">#FFA524</color>
+    <color name="colorPrimaryDark_1">#FFA524</color>
+    <color name="colorPrimaryLight_1">#FFA524</color>
+
+    <color name="colorRosa1">#D81B60</color>
+
+    <color name="textColor">#333130</color>
+</resources>
